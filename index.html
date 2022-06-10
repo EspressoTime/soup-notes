@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Soup Not.es</title>
+  <meta name="description" content="Generate notes with alphabet soup letters.">
+  <meta name="author" content="AV">
+
+  <meta property="og:title" content="Soup Not.es">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Generate notes with alphabet soup letters.">
+
+  <link rel="icon" href="assets/favicon.ico">
+
+  <link rel="stylesheet" href="styles.css?v=1.0">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="col1">
+      <h1>Soup Not.es</h1>
+      <textarea id="textarea" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' rows="7" placeholder="Write your very own soup note here!"></textarea>
+      <p class="error">Only alphanumeric characters and + = - ( ) * ! ? currently available, sorry 😅</p>
+      <p>You might also like this <a href="https://photofunia.com/categories/all_effects/soup_letters" target="_blank">other soup text generator.</a></p>
+    </div>
+    <div class="col2">
+      <div id="target">
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
