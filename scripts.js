@@ -53,6 +53,12 @@ textarea.onkeyup = function () {
   this.value = this.value.replace(/[^a-zA-Z0-9 \-+\n=*!?)(\.]/, "");
 
   target.innerText = "";
+  if (this.value.length > 20) {
+    document.querySelector('#target').classList.add("smaller");
+  }
+  else {
+    document.querySelector('#target').classList.remove("smaller");
+  }
   [...this.value].forEach((e, i) => {
     //manage spaces
     if (e === " ") {
