@@ -29,6 +29,10 @@ body {
   flex: 1 1 70%;
 }
 
+#target {
+  padding: 2%;
+}
+
 h1 {
   font-size: 60px;
   margin: 0 0 5px;
@@ -58,7 +62,7 @@ p {
 }
 
 img {
-  width: 80px;
+  width: auto;
   height: 80px;
 }
 
@@ -77,11 +81,11 @@ img {
   }
 
   img {
-    width: 38px;
+    width: auto;
     height: 38px;
   }
   #target.smaller img {
-    width: 28px;
+    width: auto;
     height: 28px;
   }
 }
